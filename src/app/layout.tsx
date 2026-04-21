@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bio | Modern Minimalist",
-  description: "Personal bio page with Discord RPC and social links.",
+  title: "diego.toma.monster",
+  description: "For a better experience, enter this site on PC",
 };
 
 export default function RootLayout({
