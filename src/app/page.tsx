@@ -42,7 +42,7 @@ export default function Home() {
           cursor: 'default',
           textAlign: 'center'
         }}>
-          @viviste
+          [diego.toma.monster]
         </h1>
         <ViewCounter />
       </div>
