@@ -43,11 +43,14 @@ function scaleByPixelRatio(input) {
   return Math.floor(input * pixelRatio);
 }
 
-const canvas = document.getElementsByTagName("canvas")[0];
+const canvas = document.getElementById("fluid-canvas");
+if (!canvas) {
+  console.warn("Fluid canvas not found");
+}
 resizeCanvas();
 
 // Set the properties from the config file
-fetch("config.json")
+fetch("/resources/OpenGL/config.json")
   .then((response) => response.json())
   .then((config) => {
     runSimulation(config);
@@ -954,7 +957,7 @@ function runSimulation(config) {
   let sunrays;
   let sunraysTemp;
 
-  let ditheringTexture = createTextureAsync("LDR_LLL1_0.png");
+  let ditheringTexture = createTextureAsync("/resources/OpenGL/LDR_LLL1_0.png");
 
   const blurProgram = new Program(blurVertexShader, blurShader);
   const copyProgram = new Program(baseVertexShader, copyShader);
@@ -1282,6 +1285,11 @@ function runSimulation(config) {
   updateKeywords();
   initFramebuffers();
   multipleSplats(parseInt(Math.random() * 20) + 5);
+
+  // Keep it animated constantly!
+  setInterval(() => {
+    multipleSplats(1);
+  }, 2000);
 
   let lastUpdateTime = Date.now();
   let colorUpdateTimer = 0.0;
