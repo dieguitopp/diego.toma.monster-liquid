@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --background: #f8f9fa;
-  --foreground: #1a1a1a;
-  --accent: #000000;
-  --secondary: #666666;
-  --card-bg: rgba(255, 255, 255, 0.4);
-  --card-border: rgba(255, 255, 255, 0.7);
-  --card-hover: rgba(255, 255, 255, 0.6);
+  --background: #050505;
+  --foreground: #ffffff;
+  --accent: #ffffff;
+  --secondary: #a0a0a0;
+  --card-bg: rgba(20, 20, 20, 0.4);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --card-hover: rgba(40, 40, 40, 0.6);
   --font-outfit: 'Outfit', sans-serif;
   --font-inter: 'Inter', sans-serif;
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -78,7 +78,7 @@ a {
 
 .liquid-title {
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  background: linear-gradient(90deg, #1a1a1a, #666, #1a1a1a);
+  background: linear-gradient(90deg, #fff, #a0a0a0, #fff);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
