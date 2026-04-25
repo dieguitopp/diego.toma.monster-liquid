@@ -22,11 +22,11 @@ export default function FluidBackground() {
       SPLAT_RADIUS: 0.15,
       SPLAT_FORCE: 6000,
       SHADING: true,
-      COLORFUL: true,
+      COLORFUL: false,
       COLOR_UPDATE_SPEED: 10,
       PAUSED: false,
-      BACK_COLOR: { r: 0, g: 0, b: 0 },
-      TRANSPARENT: true,
+      BACK_COLOR: { r: 255, g: 255, b: 255 },
+      TRANSPARENT: false,
       BLOOM: false,
       BLOOM_ITERATIONS: 8,
       BLOOM_RESOLUTION: 256,
@@ -36,7 +36,7 @@ export default function FluidBackground() {
       SUNRAYS: true,
       SUNRAYS_RESOLUTION: 196,
       SUNRAYS_WEIGHT: 1.0,
-      RANDOM_COLORS: true,
+      RANDOM_COLORS: false,
       SPLAT_HUE: 0
     };
 
@@ -50,7 +50,7 @@ export default function FluidBackground() {
       this.deltaY = 0;
       this.down = false;
       this.moved = false;
-      this.color = [30, 0, 300];
+      this.color = [0.15, 0.15, 0.15];
     }
 
     let pointers = [];
@@ -1089,11 +1089,9 @@ export default function FluidBackground() {
     }
 
     function generateColor() {
-      let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-      c.r *= 0.15;
-      c.g *= 0.15;
-      c.b *= 0.15;
-      return [c.r, c.g, c.b];
+      // Black and white only: random grayscale intensity
+      const intensity = 0.05 + Math.random() * 0.15;
+      return [intensity, intensity, intensity];
     }
 
     function HSVtoRGB(h, s, v) {
@@ -1193,7 +1191,7 @@ export default function FluidBackground() {
         height: '100%',
         zIndex: -1,
         pointerEvents: 'none',
-        background: 'black'
+        background: 'white'
       }}
     />
   );
