@@ -21,6 +21,18 @@ export default function Home() {
       <CustomCursor />
       <FluidBackground />
       
+      {/* Main Title */}
+      <h1 className="liquid-title" style={{
+        fontSize: 'clamp(2rem, 5vw, 4rem)',
+        fontWeight: 'bold',
+        textAlign: 'center',
+        margin: '0',
+        padding: '0 1rem',
+        zIndex: 10
+      }}>
+        [diego.toma.monster]
+      </h1>
+
       {/* Discord RPC */}
       <DiscordRPC />
 
