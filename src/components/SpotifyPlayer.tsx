@@ -20,7 +20,9 @@ export default function SpotifyPlayer() {
       padding: '1.2rem',
       display: 'flex',
       flexDirection: 'column',
-      gap: '1rem'
+      gap: '1rem',
+      pointerEvents: 'auto',
+      zIndex: 10
     }}>
       <div style={{ fontSize: '0.85rem', fontWeight: 600, opacity: 0.6, letterSpacing: '1px', textTransform: 'uppercase' }}>
         Favorite Tracks
