@@ -1,7 +1,6 @@
 import Image from "next/image";
 import DiscordRPC from "@/components/DiscordRPC";
 import SocialLink from "@/components/SocialLink";
-import ViewCounter from "@/components/ViewCounter";
 import CustomCursor from "@/components/CustomCursor";
 import SpotifyPlayer from "@/components/SpotifyPlayer";
 
@@ -44,7 +43,6 @@ export default function Home() {
         }}>
           [diego.toma.monster]
         </h1>
-        <ViewCounter />
       </div>
 
       {/* Discord RPC */}
