@@ -14,9 +14,9 @@
   "COLOR_UPDATE_SPEED": 10,
   "PAUSED": false,
   "BACK_COLOR": {
-    "r": 255,
-    "g": 255,
-    "b": 255
+    "r": 0,
+    "g": 0,
+    "b": 0
   },
   "TRANSPARENT": false,
   "BLOOM": false,

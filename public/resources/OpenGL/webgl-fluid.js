@@ -1742,8 +1742,8 @@ function runSimulation(config) {
       c.b *= 0.15;
       return c;
     } else {
-      // Return dark gray for the fluid
-      let intensity = 0.05 + Math.random() * 0.1;
+      // Return bright gray/white for the fluid (will be inverted to black by CSS)
+      let intensity = 0.8 + Math.random() * 0.2;
       return { r: intensity, g: intensity, b: intensity };
     }
   }
