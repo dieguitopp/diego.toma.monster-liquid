@@ -23,7 +23,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: #fff;
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
