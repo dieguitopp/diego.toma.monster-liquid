@@ -57,7 +57,7 @@ export default function DiscordRPC() {
   const currentActivity = activities.find(a => a.name !== 'Custom Status');
 
   return (
-    <div className="glass-card animate-fade-in" style={{ padding: '1.5rem', width: '100%', maxWidth: '400px', display: 'flex', gap: '1rem', alignItems: 'center' }}>
+    <div className="glass-card animate-fade-in" style={{ padding: '1.5rem', width: '100%', maxWidth: '400px', display: 'flex', gap: '1rem', alignItems: 'center', pointerEvents: 'auto' }}>
       <div style={{ position: 'relative' }}>
         <Image
           src={`https://cdn.discordapp.com/avatars/${userId}/${discord_user.avatar}.png`}

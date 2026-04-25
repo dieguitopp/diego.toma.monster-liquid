@@ -22,7 +22,8 @@ export default function SocialLink({ href, label, icon }: SocialLinkProps) {
         maxWidth: '400px',
         fontSize: '0.95rem',
         fontWeight: 500,
-        letterSpacing: '0.5px'
+        letterSpacing: '0.5px',
+        pointerEvents: 'auto'
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>

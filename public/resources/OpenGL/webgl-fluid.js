@@ -1742,11 +1742,9 @@ function runSimulation(config) {
       c.b *= 0.15;
       return c;
     } else {
-      let c = HSVtoRGB(config.SPLAT_HUE, 1.0, 1.0);
-      c.r *= 0.15;
-      c.g *= 0.15;
-      c.b *= 0.15;
-      return c;
+      // Return dark gray for the fluid
+      let intensity = 0.05 + Math.random() * 0.1;
+      return { r: intensity, g: intensity, b: intensity };
     }
   }
 

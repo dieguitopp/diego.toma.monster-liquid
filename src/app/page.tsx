@@ -15,7 +15,8 @@ export default function Home() {
       width: '100%',
       padding: '2rem',
       gap: '2.5rem',
-      minHeight: '100vh'
+      minHeight: '100vh',
+      pointerEvents: 'none'
     }}>
       <CustomCursor />
       <FluidBackground />
