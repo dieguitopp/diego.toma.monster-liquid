@@ -40,22 +40,22 @@ export default function FluidBackground() {
       SPLAT_HUE: 0
     };
 
-    function pointerPrototype() {
-      this.id = -1;
-      this.texcoordX = 0;
-      this.texcoordY = 0;
-      this.prevTexcoordX = 0;
-      this.prevTexcoordY = 0;
-      this.deltaX = 0;
-      this.deltaY = 0;
-      this.down = false;
-      this.moved = false;
-      this.color = [0.15, 0.15, 0.15];
+    class PointerPrototype {
+      id = -1;
+      texcoordX = 0;
+      texcoordY = 0;
+      prevTexcoordX = 0;
+      prevTexcoordY = 0;
+      deltaX = 0;
+      deltaY = 0;
+      down = false;
+      moved = false;
+      color: number[] = [0.15, 0.15, 0.15];
     }
 
-    let pointers = [];
-    let splatStack = [];
-    pointers.push(new (pointerPrototype as any)());
+    let pointers: PointerPrototype[] = [];
+    let splatStack: any[] = [];
+    pointers.push(new PointerPrototype());
 
     const { gl, ext } = getWebGLContext(canvas);
 
