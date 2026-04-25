@@ -23,7 +23,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: var(--background);
+  background: #000;
   color: var(--foreground);
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
@@ -37,15 +37,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: 
-    radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), 
-    radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), 
-    radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%);
-  background-color: #f8f9fa;
-  /* Soft liquid background effect */
-  background-image: 
-    radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0%, rgba(233, 226, 226, 0.28) 90%),
-    radial-gradient(circle at 90% 80%, rgba(213, 213, 240, 0.3) 0%, rgba(240, 230, 230, 0.2) 90%);
+  background: transparent;
 }
 
 h1, h2, h3 {

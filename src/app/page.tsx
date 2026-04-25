@@ -3,6 +3,7 @@ import DiscordRPC from "@/components/DiscordRPC";
 import SocialLink from "@/components/SocialLink";
 import CustomCursor from "@/components/CustomCursor";
 import SpotifyPlayer from "@/components/SpotifyPlayer";
+import FluidBackground from "@/components/FluidBackground";
 
 export default function Home() {
   return (
@@ -17,34 +18,8 @@ export default function Home() {
       minHeight: '100vh'
     }}>
       <CustomCursor />
+      <FluidBackground />
       
-      {/* Background Decoration */}
-      <div style={{
-        position: 'fixed',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '400px',
-        height: '400px',
-        background: 'radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 70%)',
-        zIndex: -1,
-        pointerEvents: 'none'
-      }} />
-
-      {/* Header Section */}
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.5rem' }}>
-        <h1 className="animate-fade-in liquid-title" style={{ 
-          fontSize: '2.5rem', 
-          fontWeight: 700, 
-          letterSpacing: '-1px',
-          color: 'var(--foreground)',
-          cursor: 'default',
-          textAlign: 'center'
-        }}>
-          [diego.toma.monster]
-        </h1>
-      </div>
-
       {/* Discord RPC */}
       <DiscordRPC />
 
