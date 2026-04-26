@@ -52,12 +52,12 @@ export default function Home() {
         <SocialLink 
           href="https://steamcommunity.com/id/meephiles/" 
           label="Steam" 
-          icon={<Image src="/resources/steam.png" alt="Steam" width={20} height={20} />}
+          icon={<Image src="/resources/steam.svg" alt="Steam" width={20} height={20} />}
         />
         <SocialLink 
           href="https://www.roblox.com/es/users/263961430/profile" 
           label="Roblox" 
-          icon={<Image src="/resources/roblox.png" alt="Roblox" width={20} height={20} />}
+          icon={<Image src="/resources/roblox.svg" alt="Roblox" width={20} height={20} />}
         />
       </div>
 
