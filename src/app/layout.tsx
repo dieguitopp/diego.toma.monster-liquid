@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   description: "For a better experience, enter this site on PC",
   icons: {
     icon: [
-      { url: '/resources/icono/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
-      { url: '/resources/icono/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/resources/asasas/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/resources/asasas/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
     ],
-    shortcut: '/resources/icono/favicon.ico',
-    apple: '/resources/icono/apple-touch-icon.png',
+    shortcut: '/resources/asasas/favicon.ico',
+    apple: '/resources/asasas/apple-touch-icon.png',
   },
   openGraph: {
     title: "diego.toma.monster",
